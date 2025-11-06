@@ -36,6 +36,7 @@ RUN adduser www \
 
 
 RUN chmod u+x /project/entrypoint.sh \
+     && cp .env.example .env \ 
      && composer install \
      && php artisan key:generate
      
@@ -47,9 +48,9 @@ USER www
 
 #ENTRYPOINT ["/bin/bash"]
 
-ENTRYPOINT ["sleep", "100000000000000000000000000000000000000000000"]
+#ENTRYPOINT ["sleep", "100000000000000000000000000000000000000000000"]
 
-#ENTRYPOINT ["php","artisan","serve","--host","0.0.0.0"]
+ENTRYPOINT ["php","artisan","serve","--host","0.0.0.0"]
 
 
 
