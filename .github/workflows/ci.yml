@@ -15,8 +15,8 @@ jobs:
             
             # 2- Exécuter les tests
 
-            - name: Run test
-              run: cd app && composer install && cp .env.example .env && php artisan key:gen && php artisan serve 
+            # - name: Run test
+            #   run: cd app && composer install && cp .env.example .env && php artisan key:gen && php artisan serve 
 
             #3- Construire l'image 
 
