@@ -33,5 +33,5 @@ jobs:
 
             # 5- Pousser l'image sur la registry
             - name: Push image with new tag
-              run: docker push hanna2003/laravel_cicd:test
+              run: docker push hanna2003/laravel_cicd:latest
 
