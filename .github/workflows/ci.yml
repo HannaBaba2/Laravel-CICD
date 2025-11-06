@@ -21,4 +21,4 @@ jobs:
             # 3- Construire l'image 
 
             - name: Build app image
-              run: docker build -t hanna2003/laravel_cicd:latest
+              run: docker build -t hanna2003/laravel_cicd:latest .
