@@ -16,4 +16,4 @@ jobs:
             # 2- Exécuter les tests
 
             - name: Run test
-              run: cd app && php artisan serve
+              run: cd app && composer install && php artisan key:gen && php artisan serve 
