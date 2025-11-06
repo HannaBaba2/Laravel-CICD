@@ -31,4 +31,7 @@ jobs:
                 username: ${{ secrets.DOCKER_TOKEN}}
                 password: ${{ secrets.DOCKER_USERNAME}}
 
+            # 5- Pousser l'image sur la registry
+            - name: Push image with new tag
+              run: docker push hanna2003/laravel_cicd:test
 
